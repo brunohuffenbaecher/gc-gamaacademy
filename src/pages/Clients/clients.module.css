@@ -1,48 +1,56 @@
 /* body {
   background-image: url("https://lumiere-a.akamaihd.net/v1/images/sa_pixar_virtualbg_coco_16x9_9ccd7110.jpeg");
 } */
-main {
-  display: flex;
+.mainDiv {
+  /* display: flex; */
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  height: 82vh;
+  /* background-color: rgba(248, 163, 113, 0.25); */
+
+  /* height: 82vh;
   background-image: url("../../assets/img/mars_colony2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  */
 }
+
+.flexBox {
+  display: flex;
+  /* justify-content: center;
+  flex-direction: column; */
+}
+
 .container {
   width: 90%;
 
   background-color: rgba(248, 163, 113, 0.25);
+
   padding-top: 20px;
   padding-bottom: 10px;
-  font-size: 1.8rem;
+  /* font-size: 1.8rem;
   color: white;
-  text-shadow: 1px 1px 2px #000000;
+  text-shadow: 1px 1px 2px #000000; */
+}
 
+.form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.btnDiv {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
-}
-
-button {
-  margin: 10px;
-  width: 250px;
-  height: 50px;
+.input {
+  width: 350px;
+  height: 30px;
+  text-align: center;
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.3rem;
+  font-size: medium;
 }
 
-button:hover {
-  background-color: coral;
+.cardsDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import css from "./home.module.css";
 import Header from "../../components/Header";
 import { useHistory } from "react-router";
 import Footer from "../../components/Footer";
@@ -8,7 +8,6 @@ export default function Home() {
   const history = useHistory();
 
   const btnClick = (e) => {
-    console.log(e.target.textContent);
     if (e.target.textContent === "Client Management") {
       history.push("/clients");
     } else if (e.target.textContent === "Product Management") {
@@ -18,12 +17,16 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
-        <div className="container">
+      <main className={css.mainHome}>
+        <div className={css.container}>
           <div>Select the operation</div>
-          <div className="btnDiv">
-            <button onClick={btnClick}>Client Management</button>
-            <button onClick={btnClick}>Product Management</button>
+          <div className={css.btnDiv}>
+            <button className={css.buttonHome} onClick={btnClick}>
+              Client Management
+            </button>
+            <button className={css.buttonHome} onClick={btnClick}>
+              Product Management
+            </button>
           </div>
         </div>
       </main>
