@@ -14,10 +14,15 @@ export default function Footer() {
           <a
             href="https://www.linkedin.com/in/brunohuffenbaecher/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src={linkedinLogo} alt="linkedin logo" />
           </a>
-          <a href="https://github.com/brunohuffenbaecher" target="_blank">
+          <a
+            href="https://github.com/brunohuffenbaecher"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={githubLogo} alt="github logo" />
           </a>
         </div>
