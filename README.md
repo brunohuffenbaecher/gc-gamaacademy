@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Ticket to Mars - Aplicação de Gerenciamento
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse projeto é a continuação do projeto [Landing Page - Ticket to Mars](https://tickettomars.netlify.app/) - [Acesse o código-fonte](https://github.com/brunohuffenbaecher/lp-gamaacademy).
 
-## Available Scripts
+## Intro
 
-In the project directory, you can run:
+Esse projeto é o resultado de um dos desafios propostos no programa de treinamento Hiring Coders II - VTEX e Gama Academy. O projeto simula um e-commerce de viagens para Marte. Nesta etapa, foram criados sistemas para gestão de cadastro de clientes e produtos.
+A versão mais recente pode ser acessada em: [Ticket to Mars - Management](https://tickettomars-management.vercel.app/)
+
+## Requisitos
+
+Criação de um sistema e-commerce para inventário de produtos e dados de clientes, contendo:
+
+- Os dados de clientes, endereços e produtos devem estar devidamente estruturados
+- Dados armazenados no localstorage
+- Código fonte no github com o arquivo README detalhando as funcionalidades da programação
+
+### Abordagem do projeto:
+
+O projeto foi dividido inicialmente em 3 páginas principais: Home, Products e Clients.
+
+A página Home é a página principal e contém botões que redirecionam para as demais páginas.
+
+As páginas subsequentes foram destinadas ao cadastro dos produtos ou clientes. Ambas possuem um formulário com os dados relevantes para a operação de cadastro, além de apresentar os produtos/clientes cadastrados.
+
+As informações são armazenadas localmente, através do `localStorage`. A cada novo registro, os dados são adicionados ao fim dos arrays de armazenamento.
+
+O script `startData.js` contém dados iniciais para clientes e produtos, além de uma função para armazenamento inicial dos dados no localStorage. O script é executado ao carregar a página.
+
+### Ferramentas utilizadas
+
+O projeto foi desenvolvido utilizando `React`, criando componentes para agilizar a escalabilidade do projeto.
+A estilização foi executada em módulos, com a abordagem de CSS Modules.
+
+## Instalação
+
+Faça download do projeto ou clone o repositório. Em seguida, execute:
+
+### `yarn`
+
+Para instalar todas as dependências do projeto.
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Executa o app no modo de desenvolvedor.
+Abra [http://localhost:3000](http://localhost:3000) para visualizar o projeto no navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## License
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](https://choosealicense.com/licenses/mit/)
