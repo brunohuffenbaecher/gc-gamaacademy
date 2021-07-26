@@ -8,10 +8,18 @@ export default function ClientCard({ user }) {
     <div className={css.clientBanner}>
       <img src={avatar} className={css.imgAvatar} alt="client-avatar" />
       <div className={css.clientInfo}>
-        <span>Name: {name}</span>
-        <span>Email: {email}</span>
-        <span>Phone: {phone}</span>
-        <span>Address: {address}</span>
+        <span>
+          <strong>Name:</strong> {name}
+        </span>
+        <span>
+          <strong>Email:</strong> {email}
+        </span>
+        <span>
+          <strong>Phone:</strong> {phone}
+        </span>
+        <span>
+          <strong>Address:</strong> {address}
+        </span>
       </div>
     </div>
   );

@@ -53,7 +53,7 @@ export default function Clients() {
       <main className={`${styles.flexBox} ${styles.mainDiv}`}>
         <section className={styles.container}>
           <form action="" className={styles.form} onSubmit={formSubmit}>
-            <span>Register New User</span>
+            <span className={styles.spanTitle}>Register New User</span>
             <br />
             <label htmlFor="inputName">Name:</label>
             <input
@@ -99,13 +99,13 @@ export default function Clients() {
           </form>
         </section>
         <section className={`${styles.container} ${styles.cardsDisplay}`}>
-          <span>Client List:</span>
+          <span className={styles.spanTitle}>Client List:</span>
           {users.map((user, index) => {
             return <ClientCard key={index} user={user} />;
           })}
 
-          <div>This is the clients page</div>
-          <a href="/">Link to home</a>
+          <br />
+          <a href="/">Back to Home</a>
         </section>
       </main>
 

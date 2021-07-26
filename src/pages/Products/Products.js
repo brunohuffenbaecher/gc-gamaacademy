@@ -46,7 +46,7 @@ export default function Products() {
       <main className={`${css.flexBox} ${css.mainDiv}`}>
         <section className={css.container}>
           <form action="" className={css.form} onSubmit={formSubmit}>
-            <span>Register New User</span>
+            <span className={css.spanTitle}>Register New User</span>
             <br />
             <label htmlFor="inputName">Name:</label>
             <input
@@ -98,13 +98,13 @@ export default function Products() {
           </form>
         </section>
         <section className={`${css.container} ${css.cardsDisplay}`}>
-          <span>Product List:</span>
+          <span className={css.spanTitle}>Product List:</span>
           {products.map((product, index) => {
             return <ProductCard key={index} product={product} />;
           })}
 
-          <div>This is the products page</div>
-          <a href="/">Link to home</a>
+          <br />
+          <a href="/">Back to Home</a>
         </section>
       </main>
 

@@ -9,12 +9,12 @@
   width: 100%;
   /* background-color: rgba(248, 163, 113, 0.25); */
 
-  /* height: 82vh;
+  /* height: 82vh;*/
   background-image: url("../../assets/img/mars_colony2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;  */
+  background-repeat: no-repeat;
 }
 
 .flexBox {
@@ -26,19 +26,51 @@
 .container {
   width: 90%;
 
-  background-color: rgba(248, 163, 113, 0.25);
+  background-color: rgba(246, 244, 243, 0.35);
 
   padding-top: 20px;
   padding-bottom: 10px;
-  /* font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  /* font-size: 1.5rem;
   color: white;
   text-shadow: 1px 1px 2px #000000; */
+}
+
+.spanTitle {
+  background-color: rgba(255, 136, 0);
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+  /* text-shadow: 1px 1px 2px #000000; */
 }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form label {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 2px #000000;
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+
+.form button {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background-color: coral;
 }
 
 .input {
